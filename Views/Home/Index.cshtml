@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+	<h1 class="display-4">Welcome</h1>
+	<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+	<form asp-action="PostFile" asp-controller="Home" method="post" role="form" enctype="multipart/form-data">
+		
+		<div class="form-group">
+			<label>Zmień zdjęcie główne</label>
+			<input name="file"
+				   class="form-control"
+				   type="file" />
+		</div>
+		
+		<div class="form-group">
+			<input type="submit" value="Save" class="btn btn-primary" />
+		</div>
+	</form>
+</div>
